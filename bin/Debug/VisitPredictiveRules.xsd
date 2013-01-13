@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="urn:VisitPredictiveRuleSchema" elementFormDefault="qualified" xmlns="urn:VisitPredictiveRuleSchema" xmlns:mstns="http://tempuri.org/VisitPredictiveRules.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="VisitPredictiveRuleSchema">
+	<xs:element name="Study" type="Study" />
+	<xs:complexType name="Study">
+		<xs:sequence>
+			<xs:element name="Visit" minOccurs="1" maxOccurs="unbounded" type="Visit" />
+		</xs:sequence>
+		<xs:attribute name="studyName" type="xs:string" use="optional" />
+		<xs:attribute name="studyId" type="xs:string" use="optional" />
+		<xs:attribute name="locationId" type="xs:string" use="optional" />
+		<xs:attribute name="siteId" type="xs:string" use="required" />
+	</xs:complexType>
+	<xs:complexType name="Visit">
+		<xs:sequence>
+			<xs:element name="dAnchorDate" minOccurs="0" maxOccurs="1" type="xs:date" />
+			<xs:element name="EventTrigger" minOccurs="0" maxOccurs="1" type="EventTrigger" />
+			<xs:element name="VisitDate" minOccurs="0" maxOccurs="1" type="VisitDate" />
+			<xs:element name="Restriction" minOccurs="0" maxOccurs="1" type="Restriction" />
+		</xs:sequence>
+		<xs:attribute name="visitNumber" type="xs:string" use="required" />
+		<xs:attribute name="visitGroup" type="xs:string" use="optional" />
+		<xs:attribute name="id" type="xs:ID" use="required" />
+	</xs:complexType>
+	<xs:complexType name="EventTrigger">
+		<xs:sequence>
+			<xs:element name="eTrigger" minOccurs="1" maxOccurs="unbounded" type="enumTrigger" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Restriction">
+		<!-- undefined -->
+	</xs:complexType>
+	<xs:complexType name="VisitDate">
+		<xs:sequence>
+			<xs:element name="rTrialAnchor" minOccurs="1" maxOccurs="1" type="rTrialAnchor" />
+			<xs:element name="iTimeLapse" minOccurs="1" maxOccurs="1" type="iTimeLapse" />
+			<xs:element name="iTimeWindowPlus" minOccurs="1" maxOccurs="1" type="iTimeWindowPlus" />
+			<xs:element name="iTimeWindowMinus" minOccurs="1" maxOccurs="1" type="iTimeWindowMinus" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="rTrialAnchor">
+		<xs:attribute name="idref" type="xs:IDREF" use="required" />
+	</xs:complexType>
+	<xs:complexType name="iTimeLapse">
+		<xs:simpleContent>
+			<xs:extension base="xs:int">
+				<xs:attribute name="incrementType" type="enumIncType" use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="iTimeWindowPlus">
+		<xs:simpleContent>
+			<xs:extension base="xs:int">
+				<xs:attribute name="incrementType" type="enumIncType" use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="iTimeWindowMinus">
+		<xs:simpleContent>
+			<xs:extension base="xs:int">
+				<xs:attribute name="incrementType" type="enumIncType" use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="enumTrigger">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="enrollment" />
+			<xs:enumeration value="sid2pid" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="enumIncType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="day" />
+			<xs:enumeration value="week" />
+			<xs:enumeration value="month" />
+			<xs:enumeration value="year" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="xmltest">
+</Property><Property Name="Solution File" Value="C:\Projects\XPathGen\xmltest.sln">
+</Property><Property Name="User Options File" Value="C:\Projects\XPathGen\xmltest.suo">
+</Property><Property Name="Date" Value="Friday, January 05, 2007">
+</Property><Property Name="Time" Value="15:08 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="xmltest.sln" Description="File successfully backed up as C:\Projects\XPathGen\backup2003\Backup\xmltest.sln">
+</Event><Event ErrorLevel="0" Project="" Source="xmltest.suo" Description="File successfully backed up as C:\Projects\XPathGen\backup2003\Backup\xmltest.suo">
+</Event><Event ErrorLevel="0" Project="xmltest" Source="xmltest.csproj" Description="Project file successfully backed up as C:\Projects\XPathGen\backup2003\Backup\xmltest.csproj">
+</Event><Event ErrorLevel="0" Project="xmltest" Source="xmltest.csproj.user" Description="Project user file successfully backed up as C:\Projects\XPathGen\backup2003\Backup\xmltest.csproj.user">
+</Event><Event ErrorLevel="0" Project="xmltest" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\Projects\XPathGen\backup2003\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="xmltest" Source="Form1.cs" Description="File successfully backed up as C:\Projects\XPathGen\backup2003\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="xmltest" Source="bin\Debug\rules.xsx" Description="File successfully backed up as C:\Projects\XPathGen\backup2003\Backup\bin\Debug\rules.xsx">
+</Event><Event ErrorLevel="0" Project="xmltest" Source="bin\Debug\test.xsx" Description="File successfully backed up as C:\Projects\XPathGen\backup2003\Backup\bin\Debug\test.xsx">
+</Event><Event ErrorLevel="0" Project="xmltest" Source="App.ico" Description="File successfully backed up as C:\Projects\XPathGen\backup2003\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="xmltest" Source="bin\Debug\rules.xml" Description="File successfully backed up as C:\Projects\XPathGen\backup2003\Backup\bin\Debug\rules.xml">
+</Event><Event ErrorLevel="0" Project="xmltest" Source="bin\Debug\rules.xsd" Description="File successfully backed up as C:\Projects\XPathGen\backup2003\Backup\bin\Debug\rules.xsd">
+</Event><Event ErrorLevel="0" Project="xmltest" Source="bin\Debug\test.xml" Description="File successfully backed up as C:\Projects\XPathGen\backup2003\Backup\bin\Debug\test.xml">
+</Event><Event ErrorLevel="0" Project="xmltest" Source="bin\Debug\test.xsd" Description="File successfully backed up as C:\Projects\XPathGen\backup2003\Backup\bin\Debug\test.xsd">
+</Event><Event ErrorLevel="0" Project="xmltest" Source="Form1.resx" Description="File successfully backed up as C:\Projects\XPathGen\backup2003\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="xmltest" Source="xmltest.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="xmltest" Source="xmltest.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="xmltest.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="xmltest.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="xmltest" Source="xmltest.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

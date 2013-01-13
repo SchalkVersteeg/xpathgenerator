@@ -1,0 +1,73 @@
+<Configuration>
+  <SharedSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </SharedSolutionDisabledTemplatesManager>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <Providers />
+  </UnitTestRunner>
+  <UserSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </UserSolutionDisabledTemplatesManager>
+  <FileStructureView>
+    <AutoScrollToSource>False</AutoScrollToSource>
+    <TrackCaretLocation>False</TrackCaretLocation>
+  </FileStructureView>
+  <ReFormatCode>
+    <ReorderMembers>False</ReorderMembers>
+    <OptimizeUsings>False</OptimizeUsings>
+    <RemoveRedundantThis>False</RemoveRedundantThis>
+    <ShortenReferences>False</ShortenReferences>
+  </ReFormatCode>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <EditorManager>
+    <RecentFiles>
+      <File id="E6BE0DDA-B6AF-489C-ABF4-8ED8231648D2/d:bin/d:Debug/f:rules.xsd" caret="0" scrollPosition="0|0" />
+      <File id="E6BE0DDA-B6AF-489C-ABF4-8ED8231648D2/d:bin/d:Debug/f:rules.xml" caret="0" scrollPosition="0|0" />
+      <File id="E6BE0DDA-B6AF-489C-ABF4-8ED8231648D2/f:Form1.cs" caret="14464" scrollPosition="0|399" />
+    </RecentFiles>
+  </EditorManager>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:System.Windows.Forms.OpenFileDialog">
+      <Item value="Multiselect" priority="0" />
+      <Item value="DefaultExt" priority="0" />
+      <Item value="ShowDialog" priority="0" />
+      <Item value="FileName" priority="0" />
+      <Item value="Filter" priority="1" />
+      <Item value="FilterIndex" priority="0" />
+      <Item value="InitialDirectory" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileInfo">
+      <Item value="FullName" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@xmltest.Form1.label3">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO">
+      <Item value="File" priority="0" />
+      <Item value="FileInfo" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System">
+      <Item value="Text" priority="0" />
+      <Item value="IO" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@xmltest.Form1.label2">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:string">
+      <Item value="Trim" priority="7" />
+      <Item value="Substring" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.DialogResult">
+      <Item value="OK" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

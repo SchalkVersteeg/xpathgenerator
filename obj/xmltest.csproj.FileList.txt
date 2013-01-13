@@ -1,0 +1,7 @@
+obj\Debug\xmltest.exe
+obj\Debug\xmltest.pdb
+bin\Debug\xmltest.exe
+bin\Debug\xmltest.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\xmltest.Form1.resources
+obj\Debug\xmltest.csproj.GenerateResource.Cache

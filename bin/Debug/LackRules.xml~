@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<visitRoot>
+	<xmlSerializerSection type="System.Xml.XmlDocument, System.Xml, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<Study xmlns="urn:VisitRuleSchema" studyName="ITN032AD">
+			<!-- ########################### -->
+			<!-- ######## VALIDATION ####### -->
+			<!-- ########################### -->
+			<Validation>
+				<Sid>
+					<iStart>8001</iStart>
+					<iEnd>9999</iEnd>
+					<sRegex>/d</sRegex>
+				</Sid>
+				<Pid>
+					<Range>
+						<iStart>001</iStart>
+						<iEnd>999</iEnd>
+					</Range>
+					<sRegex>/d</sRegex>
+				</Pid>
+			</Validation>
+			<!-- ########################### -->
+			<!-- ######## VISIT LIST ####### -->
+			<!-- ########################### -->
+			<VisitList>
+				<Visit visitNumber="-1" visitGroup="-1" id="screening-1" />
+				<Visit visitNumber="0" id="visit-0" visitGroup="0">
+					<EventTrigger>
+						<eTrigger>enrollment</eTrigger>
+						<eTrigger>sid2pid</eTrigger>
+					</EventTrigger>
+				</Visit>
+				<Visit visitNumber="0.01" visitGroup="0" id="phone-0.01">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">1</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.02" visitGroup="0" id="phone-0.02">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">2</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.03" visitGroup="0" id="phone-0.03">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">3</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.04" visitGroup="0" id="phone-0.04">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">4</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.05" visitGroup="0" id="phone-0.05">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">5</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.06" visitGroup="0" id="phone-0.06">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">6</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.07" visitGroup="0" id="phone-0.07">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">7</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.08" visitGroup="0" id="phone-0.08">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">8</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.09" visitGroup="0" id="phone-0.09">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">9</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.10" visitGroup="0" id="phone-0.10">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">10</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.11" visitGroup="0" id="phone-0.11">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">12</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.12" visitGroup="0" id="phone-0.12">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">13</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.13" visitGroup="0" id="phone-0.13">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">14</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.14" visitGroup="0" id="phone-0.14">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">15</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.15" visitGroup="0" id="phone-0.15">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">16</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.16" visitGroup="0" id="phone-0.16">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">17</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.17" visitGroup="0" id="phone-0.17">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">18</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.18" visitGroup="0" id="phone-0.18">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">19</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.19" visitGroup="0" id="phone-0.19">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">20</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.20" visitGroup="0" id="phone-0.20">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">21</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.21" visitGroup="0" id="phone-0.21">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">22</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.22" visitGroup="0" id="phone-0.22">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">23</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.23" visitGroup="0" id="phone-0.23">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">24</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.24" visitGroup="0" id="phone-0.24">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">25</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.25" visitGroup="0" id="phone-0.25">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">26</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.26" visitGroup="0" id="phone-0.26">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">27</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.27" visitGroup="0" id="phone-0.27">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">28</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.28" visitGroup="0" id="phone-0.28">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">29</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.29" visitGroup="0" id="phone-0.29">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">30</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.30" visitGroup="0" id="phone-0.30">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">31</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.31" visitGroup="0" id="phone-0.31">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">32</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.32" visitGroup="0" id="phone-0.32">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">33</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.33" visitGroup="0" id="phone-0.33">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">34</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.34" visitGroup="0" id="phone-0.34">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">35</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.35" visitGroup="0" id="phone-0.35">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">36</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="0.36" visitGroup="0" id="phone-0.36">
+					<VisitDate>
+						<rTrialAnchor idref="visit-0" />
+						<iTimeLapse incrementType="week">37</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12" visitGroup="12" id="visit-12" />
+				<Visit visitNumber="12.01" visitGroup="12" id="phone-12.01">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">2</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.02" visitGroup="12" id="phone-12.02">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">4</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.03" visitGroup="12" id="phone-12.03">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">6</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.04" visitGroup="12" id="phone-12.04">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">8</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.05" visitGroup="12" id="phone-12.05">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">10</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.06" visitGroup="12" id="phone-12.06">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">12</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.07" visitGroup="12" id="phone-12.07">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">14</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.08" visitGroup="12" id="phone-12.08">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">16</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.09" visitGroup="12" id="phone-12.09">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">18</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.10" visitGroup="12" id="phone-12.10">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">20</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.11" visitGroup="12" id="phone-12.11">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">22</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.12" visitGroup="12" id="phone-12.12">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">24</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.13" visitGroup="12" id="phone-12.13">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">26</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.14" visitGroup="12" id="phone-12.14">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">28</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.15" visitGroup="12" id="phone-12.15">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">30</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.16" visitGroup="12" id="phone-12.16">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">32</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.17" visitGroup="12" id="phone-12.17">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">34</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.18" visitGroup="12" id="phone-12.18">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">36</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.19" visitGroup="12" id="phone-12.19">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">38</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.20" visitGroup="12" id="phone-12.20">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">40</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.21" visitGroup="12" id="phone-12.21">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">42</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.22" visitGroup="12" id="phone-12.22">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">44</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.23" visitGroup="12" id="phone-12.23">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">46</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.24" visitGroup="12" id="phone-12.24">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">48</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.25" visitGroup="12" id="phone-12.25">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">50</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.26" visitGroup="12" id="phone-12.26">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">52</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.27" visitGroup="12" id="phone-12.27">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">54</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.28" visitGroup="12" id="phone-12.28">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">56</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.29" visitGroup="12" id="phone-12.29">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">58</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.30" visitGroup="12" id="phone-12.30">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">60</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.31" visitGroup="12" id="phone-12.31">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">62</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.32" visitGroup="12" id="phone-12.32">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">64</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.33" visitGroup="12" id="phone-12.33">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">66</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.34" visitGroup="12" id="phone-12.34">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">68</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.35" visitGroup="12" id="phone-12.35">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">70</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.36" visitGroup="12" id="phone-12.36">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">72</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.37" visitGroup="12" id="phone-12.37">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">74</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.38" visitGroup="12" id="phone-12.38">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">76</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="12.39" visitGroup="12" id="phone-12.39">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="week">78</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30" visitGroup="30" id="visit-30">
+					<VisitDate>
+						<rTrialAnchor idref="visit-12" />
+						<iTimeLapse incrementType="month">18</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.01" visitGroup="30" id="phone-30.01">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">1</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.02" visitGroup="30" id="phone-30.02">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">2</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.03" visitGroup="30" id="phone-30.03">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">3</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.04" visitGroup="30" id="phone-30.04">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">4</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.05" visitGroup="30" id="phone-30.05">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">5</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.06" visitGroup="30" id="phone-30.06">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">6</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.07" visitGroup="30" id="phone-30.07">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">7</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.08" visitGroup="30" id="phone-30.08">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">8</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.09" visitGroup="30" id="phone-30.09">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">9</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.10" visitGroup="30" id="phone-30.10">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">10</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.11" visitGroup="30" id="phone-30.11">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">11</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.12" visitGroup="30" id="phone-30.12">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">12</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.13" visitGroup="30" id="phone-30.13">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">13</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.14" visitGroup="30" id="phone-30.14">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">14</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.15" visitGroup="30" id="phone-30.15">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">15</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.16" visitGroup="30" id="phone-30.16">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">16</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.17" visitGroup="30" id="phone-30.17">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">17</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.18" visitGroup="30" id="phone-30.18">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">18</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.19" visitGroup="30" id="phone-30.19">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">19</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.20" visitGroup="30" id="phone-30.20">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">20</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.21" visitGroup="30" id="phone-30.21">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">21</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.22" visitGroup="30" id="phone-30.22">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">22</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.23" visitGroup="30" id="phone-30.23">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">23</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.24" visitGroup="30" id="phone-30.24">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">24</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.25" visitGroup="30" id="phone-30.25">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">25</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.26" visitGroup="30" id="phone-30.26">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">26</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.27" visitGroup="30" id="phone-30.27">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">27</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.28" visitGroup="30" id="phone-30.28">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">28</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.29" visitGroup="30" id="phone-30.29">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">29</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="30.30" visitGroup="30" id="phone-30.30">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">30</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="60" visitGroup="60" id="visit-60">
+					<VisitDate>
+						<rTrialAnchor idref="visit-30" />
+						<iTimeLapse incrementType="month">30</iTimeLapse>
+						<iTimeWindowPlus incrementType="day">3</iTimeWindowPlus>
+						<iTimeWindowMinus incrementType="day">3</iTimeWindowMinus>
+					</VisitDate>
+				</Visit>
+				<Visit visitNumber="99" visitGroup="99" id="unscheduled-99" />
+			</VisitList>
+		</Study>
+	</xmlSerializerSection>
+</visitRoot>
+
