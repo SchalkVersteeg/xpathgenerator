@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="urn:rules-schema" elementFormDefault="qualified" xmlns="urn:rules-schema" xmlns:mstns="http://tempuri.org/XMLSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="mtrRules" type="rules" />
+    <xs:complexType name="rules">
+        <xs:sequence>
+            <xs:element name="sending" maxOccurs="1" minOccurs="1" type="sending" />
+            <xs:element name="receipt" type="receipt" maxOccurs="1" minOccurs="1" />
+            <xs:element name="pageAccess" type="pageAccess" maxOccurs="1" minOccurs="1" />
+            <xs:element name="storeNotification" type="storeNotification" maxOccurs="1" minOccurs="1" />
+            <xs:element name="districtNotification" type="districtNotification" maxOccurs="1" minOccurs="1" />
+            <xs:element name="ccNotification" type="ccNotification" maxOccurs="1" minOccurs="1" />
+            <xs:element name="sendNotice" type="sendNotice" maxOccurs="1" minOccurs="1" />
+            <xs:element name="receiveNotice" type="receiveNotice" maxOccurs="1" minOccurs="1" />
+            <xs:element name="discrepancyNotice" type="discrepancyNotice" maxOccurs="1" minOccurs="1" />
+            <xs:element name="newDeptNotice" type="newDeptNotice" maxOccurs="1" minOccurs="1" />
+            <xs:element name="reversal" type="reversal" maxOccurs="1" minOccurs="1" />
+            <xs:element name="displayView" type="displayView" maxOccurs="1" minOccurs="1" />
+            <xs:element name="impersonateFromStore" type="impersonateFromStore" maxOccurs="1" minOccurs="1" />
+            <xs:element name="defineLocationType" type="defineLocationType" minOccurs="1" maxOccurs="1" />
+            <xs:element name="verdeSecurityAssoc" type="verdeSecurityAssoc" minOccurs="1" maxOccurs="1" />
+            <xs:element name="mtrStatus" type="mtrStatus" minOccurs="1" maxOccurs="1" />
+            <xs:element name="orderType" type="orderType" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="listSecurity">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="mtr_corpUser" />
+            <xs:enumeration value="mtr_corpPowerUser" />
+            <xs:enumeration value="mtr_basicUser" />
+            <xs:enumeration value="mtr_districtUser" />
+            <xs:enumeration value="mtr_regionalUser" />
+            <xs:enumeration value="mtr_whseUser" />
+            <xs:enumeration value="mtr_whsePowerUser" />
+            <xs:enumeration value="mtr_administrator" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="listPage">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="home" />
+            <xs:enumeration value="sendItem" />
+            <xs:enumeration value="sendRetail" />
+            <xs:enumeration value="history" />
+            <xs:enumeration value="report" />
+            <xs:enumeration value="admin" />
+            <xs:enumeration value="help" />
+            <xs:enumeration value="receiptItem" />
+            <xs:enumeration value="receiptRetail" />
+            <xs:enumeration value="recvItem" />
+            <xs:enumeration value="recvRetail" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="listLocationType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="whse" />
+            <xs:enumeration value="store" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="listMtrType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="fixtures" />
+            <xs:enumeration value="merchandise" />
+            <xs:enumeration value="racks" />
+            <xs:enumeration value="supplies" />
+            <xs:enumeration value="buildMaterial" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="listOrderType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="retail" />
+            <xs:enumeration value="item" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="listItemStatus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="active" />
+            <xs:enumeration value="sellDown" />
+            <xs:enumeration value="deleted" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="listReceivingType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="auto" />
+            <xs:enumeration value="manual" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="listTransDirection">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="outgoing" />
+            <xs:enumeration value="incoming" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="listTransStatus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="declined" />
+            <xs:enumeration value="accepted" />
+            <xs:enumeration value="pending" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="listWhseFlag">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="sendout" />
+            <xs:enumeration value="whse" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="groupSecurity">
+        <xs:list itemType="listSecurity" />
+    </xs:simpleType>
+    <xs:simpleType name="groupMtrType">
+        <xs:list itemType="listMtrType" />
+    </xs:simpleType>
+    <xs:simpleType name="groupReceivingType">
+        <xs:list itemType="listReceivingType" />
+    </xs:simpleType>
+    <xs:simpleType name="groupTransStatus">
+        <xs:list itemType="listTransStatus" />
+    </xs:simpleType>
+    <xs:simpleType name="groupWhseFlag">
+        <xs:list itemType="listWhseFlag" />
+    </xs:simpleType>
+    <xs:simpleType name="groupItemStatus">
+        <xs:list itemType="listItemStatus" />
+    </xs:simpleType>
+    <xs:simpleType name="groupPage">
+        <xs:list itemType="listPage" />
+    </xs:simpleType>
+    <xs:simpleType name="groupLocationType">
+        <xs:list itemType="listLocationType" />
+    </xs:simpleType>
+    <xs:simpleType name="groupOrderType">
+        <xs:list itemType="listOrderType" />
+    </xs:simpleType>
+    <xs:complexType name="mtrTypeCombination">
+        <xs:sequence>
+            <xs:element name="groupMtrTypeCombo" maxOccurs="unbounded" type="groupMtrType" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="sendRules">
+        <xs:sequence>
+            <xs:element name="senders" type="groupLocationType" maxOccurs="1" minOccurs="1" />
+            <xs:element name="receivers" type="groupLocationType" minOccurs="1" maxOccurs="1" />
+            <xs:element name="userGroups" type="groupSecurity" maxOccurs="1" minOccurs="1" />
+            <xs:element name="itemStatuses" type="groupItemStatus" maxOccurs="1" minOccurs="1" />
+            <xs:element name="mtrTypes" type="groupMtrType" maxOccurs="1" minOccurs="1" />
+            <xs:element name="mtrTypeCombinations" type="mtrTypeCombination" maxOccurs="1" minOccurs="0" />
+            <xs:element name="orderTypes" type="groupOrderType" maxOccurs="1" minOccurs="1" />
+            <xs:element name="receivingType" type="listReceivingType" maxOccurs="1" minOccurs="1" />
+            <xs:element name="whseFlags" type="groupWhseFlag" maxOccurs="1" minOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="sending">
+        <xs:sequence>
+            <xs:element name="send" type="sendRules" maxOccurs="unbounded" minOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="receipt">
+        <xs:sequence>
+            <xs:element name="print" type="printRules" maxOccurs="unbounded" minOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="printRules">
+        <xs:sequence>
+            <xs:element name="directions" type="listTransDirection" maxOccurs="1" minOccurs="1" />
+            <xs:element name="quantity" type="xs:int" maxOccurs="1" minOccurs="1" />
+            <xs:element name="message" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="pageAccess">
+        <xs:sequence>
+            <xs:element name="page" type="pageRules" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="pageRules">
+        <xs:sequence>
+            <xs:element name="pages" type="groupPage" minOccurs="1" maxOccurs="1" />
+            <xs:element name="userGroups" type="groupSecurity" maxOccurs="1" minOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="emailFormat">
+        <xs:restriction base="xs:string">
+            <xs:pattern value=".*?@.*?\..*" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="storeNotification">
+        <xs:sequence>
+            <xs:element name="prefix" type="xs:string" maxOccurs="1" minOccurs="0" />
+            <xs:element name="digitLength" type="xs:short" maxOccurs="1" minOccurs="0" />
+            <xs:element name="suffix" type="xs:string" maxOccurs="1" minOccurs="0" />
+            <xs:element name="store" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="email" type="emailFormat" />
+                    </xs:sequence>
+                    <xs:attribute name="number" type="xs:int" use="required" />
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required" />
+    </xs:complexType>
+    <xs:complexType name="districtNotification">
+        <xs:sequence>
+            <xs:element name="district" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="email" type="emailFormat" />
+                    </xs:sequence>
+                    <xs:attribute name="number" type="xs:int" use="required" />
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ccNotification">
+        <xs:sequence>
+            <xs:element name="email" type="emailFormat" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="newDeptNotification">
+        <xs:sequence>
+            <xs:element name="email" type="emailFormat" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="emails">
+        <xs:attribute name="idref" type="xs:IDREF" use="required" />
+    </xs:complexType>
+    <xs:complexType name="sendNotice">
+        <xs:sequence>
+            <xs:element name="emails" maxOccurs="unbounded" minOccurs="0" type="emails" />
+            <xs:element name="email" type="emailFormat" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="receiveNotice">
+        <xs:sequence>
+            <xs:element name="emails" maxOccurs="unbounded" minOccurs="0" type="emails" />
+            <xs:element name="email" type="emailFormat" maxOccurs="unbounded" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="discrepancyNotice">
+        <xs:sequence>
+            <xs:element name="emails" maxOccurs="unbounded" minOccurs="0" type="emails" />
+            <xs:element name="email" type="emailFormat" maxOccurs="unbounded" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="newDeptNotice">
+        <xs:sequence>
+            <xs:element name="email" type="emailFormat" maxOccurs="unbounded" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="reversal">
+        <xs:sequence>
+            <xs:element name="userGroups" type="groupSecurity" maxOccurs="1" minOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="displayView">
+        <xs:sequence>
+            <xs:element name="userGroups" type="groupSecurity" maxOccurs="1" minOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="impersonateFromStore">
+        <xs:sequence>
+            <xs:element name="userGroups" type="groupSecurity" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="defineLocationType">
+        <xs:sequence>
+            <xs:element name="location" type="listLocationType" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="userLocationType" type="xs:string" use="required" />
+    </xs:complexType>
+    <xs:complexType name="verdeSecurityAssoc">
+        <xs:sequence>
+            <xs:element name="verdeAssoc" type="groupSecurity" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="managerFlag" type="xs:int" use="required" />
+    </xs:complexType>
+    <xs:complexType name="mtrStatus">
+        <xs:sequence>
+            <xs:element name="status" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="value" type="xs:string" use="required" />
+    </xs:complexType>
+    <xs:complexType name="orderType">
+        <xs:sequence>
+            <xs:element name="status" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="value" type="xs:string" use="required" />
+    </xs:complexType>
+</xs:schema>

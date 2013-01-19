@@ -1,0 +1,6 @@
+C:\projects\xpathgenerator\obj\Debug\xmltest.exe
+C:\projects\xpathgenerator\obj\Debug\xmltest.pdb
+C:\projects\xpathgenerator\bin\Debug\xmltest.exe
+C:\projects\xpathgenerator\bin\Debug\xmltest.pdb
+C:\projects\xpathgenerator\obj\Debug\xmltest.Form1.resources
+C:\projects\xpathgenerator\obj\Debug\xmltest.csproj.GenerateResource.Cache

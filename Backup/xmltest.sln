@@ -1,5 +1,5 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xmltest", "xmltest.csproj", "{E6BE0DDA-B6AF-489C-ABF4-8ED8231648D2}"
 EndProject
 Global

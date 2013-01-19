@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<myroot xmlns="urn:rule-schema">
+    <sendNotice>
+        <ccEmails idref="sn" />
+        <ccEmails idref="cn" />
+    </sendNotice>
+
+    <ccNotification id="sn">
+        <email>bob@mycompany.com</email>
+        <email>bill@mycompany.com</email>
+        <email>cat@mycompany.com</email>
+    </ccNotification>
+    <ccNotification id="cn">
+        <email>abc@mycompany.com</email>
+        <email>def@mycompany.com</email>
+    </ccNotification>
+</myroot>
